@@ -1,5 +1,11 @@
-.NavBar{
+ul{
     display: flex;
     flex-direction: column;
-    color: green
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    size: 20px;
 }

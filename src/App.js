@@ -8,8 +8,8 @@ function App() {
     <div>
       <NavBar className="NavBar"></NavBar>
       <header className="App-header">
-        <img src={img} alt="logo" />
 
+        <h1>Nail Store</h1>
       </header>
     </div>
   );
