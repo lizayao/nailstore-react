@@ -5,15 +5,16 @@ import CardWithObject from "./components/Card/CardWithObject";
 import ItemListContainer from './components/ItemListContainer';
 import Button from "./components/Button/Button";
 import ButtonChildren from "./components/Button/ButtonChildren";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const dataProducts = [
     {
-      name: 'Televisor 52"',
-      price: 2090,
-      imgurl: "https://picsum.photos/280/260",
+      name: "Esmalte UV/LED Navi",
+      price: 1000,
+      imgurl: "https://beauties.com.ar/assets/archivos/productos/PN91001.webp",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,   quidem.",
+        "ADD",
     },
     {
       name: 'Monitor 22"',
@@ -34,7 +35,7 @@ function App() {
 
       <Button text="Click me" />
 
-<ButtonChildren type="alert">Click me with Childrens</ButtonChildren>
+      <ButtonChildren type="alert">Click me with Childrens</ButtonChildren>
 
 
       <div className="main">

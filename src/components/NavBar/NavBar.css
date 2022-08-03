@@ -1,11 +1,19 @@
-ul{
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listado{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
-a{
+
+ul a{
     text-decoration: none;
-    color: black
+    color: black;
+    padding: 30px;
 }
+

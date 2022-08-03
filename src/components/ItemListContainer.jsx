@@ -1,7 +1,7 @@
 import React from "react"
 
 function ItemListContainer(props){
-    let greeting
+    let greeting = "holis"
     return(
         <h1>{props.greeting}</h1>
     )
