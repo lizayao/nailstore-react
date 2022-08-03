@@ -1,7 +1,7 @@
-
 import './App.css';
-import img from "./images/logo.png"
+/* import img from "./images/logo.png" */
 import NavBar from './components/NavBar';
+/* import Card from './components/Card'; */
 
 function App() {
   return (
