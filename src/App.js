@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Card from './components/Card/Card';
+import CardWithObject from "./components/Card/CardWithObject";
 import ItemListContainer from './components/ItemListContainer';
 import Button from "./components/Button/Button";
 import ButtonChildren from "./components/Button/ButtonChildren";
@@ -8,11 +9,18 @@ import ButtonChildren from "./components/Button/ButtonChildren";
 function App() {
   const dataProducts = [
     {
-      name: "Cabina UV/LED 48W",
-      price: 4000,
-      imgurl: "https://images.app.goo.gl/9mCPmynBkEgBm8Et5",
-      description: "Cabina para secar gel UV/LED",
-    }
+      name: 'Televisor 52"',
+      price: 2090,
+      imgurl: "https://picsum.photos/280/260",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,   quidem.",
+    },
+    {
+      name: 'Monitor 22"',
+      price: 890,
+      imgurl: "https://picsum.photos/280/260",
+      description: "Lorem ipsum dolor sit,  quidem.",
+    },
   ];
 
   return (
@@ -21,9 +29,24 @@ function App() {
       <ItemListContainer />
       <header className="App-header">
 
-        <h1>Nail Store</h1>
-        <Card />
       </header>
+
+
+      <Button text="Click me" />
+
+<ButtonChildren type="alert">Click me with Childrens</ButtonChildren>
+
+
+      <div className="main">
+        <CardWithObject data={dataProducts[0]} />
+        <CardWithObject data={dataProducts[1]} />
+        <Card
+          name="Televisor HD"
+          price={2090}
+          imgurl="https://picsum.photos/280/260"
+          description="Lorem Ipsum"
+        />
+      </div>
     </div>
   );
 }
