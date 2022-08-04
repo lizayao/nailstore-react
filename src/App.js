@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <NavBar className="NavBar"></NavBar>
+      <NavBar />
       <ItemListContainer />
       <header className="App-header">
 

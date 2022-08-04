@@ -11,7 +11,7 @@ function Card({ name, price, imgurl, description }) {
         <h2>{name}</h2>
         <p>{description}</p>
         <h3>$ {price}</h3>
-        <Button type text="Ver más"></Button>
+        <Button type text="Agregar al carrito"></Button>
       </div>
     </div>
   );
