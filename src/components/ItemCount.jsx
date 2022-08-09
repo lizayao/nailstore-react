@@ -1,17 +1,20 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 function ItemCount(props) {
   const [clicks, setClicks] = React.useState(1);
+  const stock = 10;
 
   const sumarProd = () => {
-    //condicion q el click no supere el stock
-    setClicks(clicks + 1)
-    /* (clicks = stock) ? (setClicks(clicks+1)) : setClicks(clicks+0) */
+    if (clicks < stock){
+      setClicks(clicks + 1)
+    }
   };
 
   const restarProd = () => {
-    setClicks(clicks - 1)
+      if (clicks > 0){
+        setClicks(clicks - 1)
+      }   
   };
 
   const onAdd = () => {
