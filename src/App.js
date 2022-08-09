@@ -65,7 +65,7 @@ function App() {
         />
       </div>
       
-      <ItemCount initial={1} stock={50}/>
+      <ItemCount initial={1} stock={5}/>
     </div>
   );
 }

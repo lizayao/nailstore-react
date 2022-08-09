@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
 
-function ItemCount(props) {
+function ItemCount({stock}) {
   const [clicks, setClicks] = React.useState(1);
-  const stock = 10;
 
   const sumarProd = () => {
     if (clicks < stock){
