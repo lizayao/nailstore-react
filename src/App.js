@@ -7,6 +7,7 @@ import ItemListContainer from './components/ItemListContainer';
 import Button from "./components/Button/Button";
 import ButtonChildren from "./components/Button/ButtonChildren";
 import "bootstrap/dist/css/bootstrap.css";
+import ItemCount from './components/ItemCount';
 
 function App() {
 
@@ -63,6 +64,8 @@ function App() {
           description="Platium de color lila brillante."
         />
       </div>
+      
+      <ItemCount initial={1} stock={50}/>
     </div>
   );
 }
