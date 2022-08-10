@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import itemsData from "../../data/data";
 import Card from "../Card/Card";
+import ItemList from "./ItemList";
 
 function getProductos(){
     return new Promise((resolve) => {
@@ -24,6 +25,7 @@ function ItemListContainer(){
                 imgurl = {data.imgurl}
                 description = {data.description}
             />
+            <ItemList></ItemList>
         </div>
     );
 }
