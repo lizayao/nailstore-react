@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import NavBar from './components/NavBar/NavBar';
 import Card from './components/Card/Card';
 import CardWithObject from "./components/Card/CardWithObject";
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/ItemList/ItemListContainer';
 import Button from "./components/Button/Button";
 import ButtonChildren from "./components/Button/ButtonChildren";
 import "bootstrap/dist/css/bootstrap.css";
@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <Layout />
-      <ItemListContainer />
+
       <header className="App-header">
           <p>Envío gratis para compras superiores a $20.000!</p>
       </header>
@@ -45,6 +45,8 @@ function App() {
 {/*         <CardWithObject data={dataProducts[0]} />
         <CardWithObject data={dataProducts[1]} /> */}
 
+      <ItemListContainer />
+      
         <Card
           name="Capping y transfer Navi 10ml"
           price={1350}
